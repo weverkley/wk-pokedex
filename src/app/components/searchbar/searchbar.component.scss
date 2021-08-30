@@ -1,0 +1,18 @@
+@import "@../../../../../scss/variables.scss";
+
+.form-control {
+  border-radius: 30px !important;
+  background-color: $color-light-gray;
+}
+
+.form-control:focus {
+  border-color: $color-red;
+  box-shadow: 0 0 0 0.1rem $color-red;
+}
+
+.input-group-append {
+  color: $color-red;
+  position: absolute;
+  right: 15px;
+  top: 3px;
+}

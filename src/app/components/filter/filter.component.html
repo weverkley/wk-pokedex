@@ -1,0 +1,11 @@
+<div class="d-flex flex-column">
+  <div class="mb-3"><span>Filtrar por tipo</span></div>
+  <div>
+    <ng-container *ngFor="let filter of filters">
+      <button class="btn btn-filter" [ngClass]="{'selected': filter.selected}" (click)="onButtonClick(filter)">
+        <span>{{filter.name}}</span>
+        <fa-icon *ngIf="filter.selected" [icon]="'check'" style="font-size: 13px; margin-left: 10px;"></fa-icon>
+      </button>
+    </ng-container>
+  </div>
+</div>

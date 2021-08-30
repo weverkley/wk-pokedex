@@ -1,0 +1,11 @@
+@import "@../../../../../scss/variables.scss";
+
+.form-control {
+  border-radius: 30px;
+  border: 2px solid $color-red;
+}
+
+.form-control:focus {
+  border-color: $color-red;
+  box-shadow: 0 0 0 0.1rem $color-red;
+}

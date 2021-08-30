@@ -1,0 +1,28 @@
+<sv-navbar></sv-navbar>
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <sv-searchbar (onChange)="onSearch($event)"></sv-searchbar>
+    </div>
+    <div class="col-md-6 d-flex justify-content-end">
+      <sv-sort (onChange)="onSort($event)"></sv-sort>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-md-2">
+      <sv-filter (onChange)="onFilterChange($event)"></sv-filter>
+      <div class="mt-4">
+        <sv-favorite (onChange)="onFilterFavorite($event)"></sv-favorite>
+      </div>
+    </div>
+    <div class="col-md-10 pokemon-list">
+      <div class="row">
+        <div class="col-md-2 col-sm-4 col-xs-6 mb-5" *ngFor="let pokemon of pokemons">
+          <sv-pokemon-card [number]="pokemon.national_number" [name]="pokemon.name" [image]="pokemon.sprites.normal"
+            [types]="pokemon.type" [favorite]="pokemon.favorite" (onFavorite)="onFavorite(pokemon)">
+          </sv-pokemon-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

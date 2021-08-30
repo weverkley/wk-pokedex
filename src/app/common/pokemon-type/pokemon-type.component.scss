@@ -1,0 +1,87 @@
+@import "@../../../../../scss/variables.scss";
+
+.type {
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.type-fire {
+  background-color: $type-fire;
+  color: $color-white;
+}
+
+.type-normal {
+  background-color: $type-normal;
+}
+
+.type-water {
+  background-color: $type-water;
+}
+
+.type-grass {
+  background-color: $type-grass;
+}
+
+.type-ice {
+  background-color: $type-ice;
+}
+
+.type-poison {
+  background-color: $type-poison;
+  color: $color-white;
+}
+
+.type-ground {
+  background-color: $type-ground;
+}
+
+.type-flying {
+  background-color: $type-flying;
+}
+
+.type-bug {
+  background-color: $type-bug;
+}
+
+.type-rock {
+  background-color: $type-rock;
+}
+
+.type-ghost {
+  background-color: $type-ghost;
+  color: $color-white;
+}
+
+.type-dragon {
+  background-color: $type-dragon;
+  color: $color-white;
+}
+
+.type-dark {
+  background-color: $type-dark;
+  color: $color-white;
+}
+
+.type-steel {
+  background-color: $type-steel;
+}
+
+.type-fairy {
+  background-color: $type-fairy;
+}
+
+.type-psychic {
+  background-color: $type-psychic;
+  color: $color-white;
+}
+
+.type-electric {
+  background-color: $type-electric;
+}
+
+.type-fighting {
+  background-color: $type-fighting;
+  color: $color-white;
+}

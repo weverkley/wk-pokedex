@@ -1,0 +1,16 @@
+<div class="pokemon-card">
+  <div class="header">
+    <img class="header-image" [src]="image" [alt]="name">
+    <button class="btn btn-sm header-favorite" [ngClass]="{'hover': !favorite}"
+      [ngStyle]="{'display': !favorite? 'none': 'block'}" (click)="onChangeFavorite()">
+      <fa-icon [icon]="['far', 'heart']" style="font-size: 20px; margin-left: 15x;"></fa-icon>
+    </button>
+  </div>
+  <div class="body">
+    <span class="number">Nº {{number}}</span>
+    <span class="name">{{name}}</span>
+  </div>
+  <div>
+    <sv-pokemon-type [name]="type" *ngFor="let type of types">{{type}}</sv-pokemon-type>
+  </div>
+</div>

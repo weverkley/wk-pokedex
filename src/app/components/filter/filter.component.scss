@@ -1,0 +1,18 @@
+@import "@../../../../../scss/variables.scss";
+
+.btn-filter {
+  border-radius: 30px;
+  border: 2px solid $color-red;
+  color: $color-red;
+  margin: 5px;
+}
+
+.btn-filter:focus {
+  border-color: $color-red;
+  box-shadow: 0 0 0 0.1rem $color-red;
+}
+
+.selected {
+  background-color: $color-red;
+  color: $color-white;
+}

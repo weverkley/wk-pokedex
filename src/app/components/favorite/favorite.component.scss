@@ -1,0 +1,12 @@
+@import "@../../../../../scss/variables.scss";
+
+.form-check-input:checked {
+  background-color: $color-red;
+  border-color: $color-red;
+}
+
+.form-check-input:focus {
+  background-color: $color-red;
+  border-color: $color-red;
+  box-shadow: 0 0 0 0.1rem $color-red;
+}

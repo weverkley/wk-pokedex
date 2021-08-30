@@ -1,0 +1,47 @@
+@import "@../../../../../scss/variables.scss";
+
+.pokemon-card {
+  .header {
+    background-color: $color-light-gray;
+    padding: 10px;
+    border-radius: 2px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .header-image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .header-favorite {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      fa-icon {
+        color: $color-red;
+      }
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    .number {
+      color: $color-dark-gray;
+      font-size: 12px;
+      opacity: 0.5;
+    }
+    .name {
+      font-weight: bold;
+    }
+  }
+
+  :hover {
+    .header-favorite.hover {
+      display: block !important;
+    }
+  }
+}

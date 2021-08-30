@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import "scss/variables.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400&display=swap');
+
+body,
+html {
+  font-family: "Titillium Web", sans-serif;
+}
